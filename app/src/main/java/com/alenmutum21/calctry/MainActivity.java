@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         add.setOnClickListener(this);
         div.setOnClickListener(this);
         sub.setOnClickListener(this);
-    }
+    }// this contains all the contexts of the onclicks
 
     private void resultMethod() {
         equals.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         });
-    }
+    }//this is the logic when user press equals
 
     private void clearScreen() {
         Ac.setOnClickListener(new View.OnClickListener() {
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 isSum = false;
             }
         });
-    }
+    }// this is the logic of the ac command
 
     private void initFields() {
         one = findViewById(R.id.one);
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         div = findViewById(R.id.div);
         sub = findViewById(R.id.sub);
 
-    }
+    }//initializes all the fields
 
     @Override
     public void onClick(View v) {
@@ -305,7 +305,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 isDiv = true;
                 break;
         }
-    }
+    }// the onclick and the operation logic
 
 }
 

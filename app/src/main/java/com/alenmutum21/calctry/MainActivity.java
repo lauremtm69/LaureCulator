@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultMethod();
         onClickContext();
     }
-
+    // this contains all the contexts of the onclicks
     private void onClickContext() {
         one.setOnClickListener(this);
         two.setOnClickListener(this);
@@ -48,8 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         add.setOnClickListener(this);
         div.setOnClickListener(this);
         sub.setOnClickListener(this);
-    }// this contains all the contexts of the onclicks
+    }
 
+
+    //this is the logic when user press equals
     private void resultMethod() {
         equals.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,8 +99,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         });
-    }//this is the logic when user press equals
+    }
 
+    // this is the logic of the ac command
     private void clearScreen() {
         Ac.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,8 +117,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 isSum = false;
             }
         });
-    }// this is the logic of the ac command
+    }
 
+
+    //initializes all the fields
     private void initFields() {
         one = findViewById(R.id.one);
         two = findViewById(R.id.two);
@@ -135,8 +140,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         div = findViewById(R.id.div);
         sub = findViewById(R.id.sub);
 
-    }//initializes all the fields
+    }
 
+
+    // the onclick and the operation logic
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -302,7 +309,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 isDiv = true;
                 break;
         }
-    }// the onclick and the operation logic
+    }
 
 }
 

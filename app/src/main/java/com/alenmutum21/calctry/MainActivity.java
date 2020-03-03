@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String modelInt = "";
     private String firstNo = "0";
     private String secondNo = "0";
-    private int addCount;
     private boolean firstFinish = false;
     private boolean isSum,isMult,isDiv,isSub;
 
@@ -76,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     firstFinish = false;
                     isSum = false;
                     firstNo = String.valueOf(value);
-                    addCount = 0;
                 }
                 else if (isSub){
                     Double value = Double.parseDouble(firstNo) - Double.parseDouble(secondNo);
@@ -281,7 +279,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.add:
-                addCount++;
                 modelInt = "";
                 double value = Double.parseDouble(firstNo) + Double.parseDouble(secondNo);
                 firstNo = value + "";

@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String secondNo = "0";
     private int addCount;
     private boolean firstFinish = false;
-    private boolean isSum,isMult,isDiv,isSub,addRepeat,multRepeat;
+    private boolean isSum,isMult,isDiv,isSub;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         clearScreen();
         resultMethod();
         onClickContext();
-
-
     }
 
     private void onClickContext() {
